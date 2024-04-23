@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.file-upload {
+  margin-bottom: 20px;
+}
+
+.file-info {
+  margin-bottom: 20px;
+}
+
+#share-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-list {
+  margin-top: 20px;
+}
+
+.download-item {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.download-item a {
+  text-decoration: none;
+  color: blue;
+}
