@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c1693a" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#c1693a" />
+    <meta
+      name="keywords"
+      content="share files, transfer files, send files secure, private file sharing, p2p, no file size limit"
+    />
+    <meta name="propeller" content="0e7fe556a8c85589963a2957514f6c08" />
+    <title>
+      P2P Share
+    </title>
+    <meta
+      name="description"
+      content="Send your files privately and fast. No file size limit. No registration. Peer to peer. End to end encrypted."
+    />
+    <meta
+      itemprop="description"
+      content="Private and secure file sharing service, directly in your browser. Peer to peer. No file size limit. End to end encrypted."
+    />
+    <meta
+      itemprop="name"
+      content="P2P Share - Share files directly via your browser"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta id="theme-color" name="theme-color" content="#ffffff" />
+    <script
+      rel="preconnect"
+      async=""
+      src="/libs/webstreams.polyfill.js"
+    ></script>
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <script charset="utf-8" src="/static/js/0.f61fa16f.chunk.js"></script>
+    <script charset="utf-8" src="/static/js/15.70b97600.chunk.js"></script>
+    <script charset="utf-8" src="/static/js/2.2ca0d55c.chunk.js"></script>
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://localhost:45678/en/"
+      id="link-en"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://localhost:45678/es/"
+      id="link-es"
+    />
+    <link
+      rel="alternate"
+      hreflang="nl"
+      href="https://localhost:45678/nl/"
+      id="link-nl"
+    />
+  </head>
+  <body class="main">
+    <!-- <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" />
+      <button type="submit">Upload</button>
+    </form> -->
+
+    <noscript
+      style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #333;
+        padding: 1rem;
+        z-index: 999;
+        text-align: center;
+      "
+    >
+      <h1 style="font-size: 24px; color: #fff; margin: 0; margin-bottom: 1rem">
+        Oops
+      </h1>
+      <span>you need to enable javascript to use P2P Share.</span>
+    </noscript>
+    <div id="root">
+      <header class="app-header">
+        <a href="/">
+          <div class="header-logo">
+            <img src="logo_image.png" class="app-logo" alt="logo" />
+            <div class="title-and-slogan">
+              <span class="slogan"
+                >Sweetening connections, one shared moment at a time</span
+              >
+            </div>
+          </div>
+        </a>
+
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          class="menu-button-mobile"
+          height="35"
+          width="35"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="none"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="48"
+            d="M88 152h336M88 256h336M88 360h336"
+          ></path>
+        </svg>
+      </header>
+      <div class="container-main">
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Share files privately, fast and without size limit using P2P Share"
+        />
+        <meta
+          name="twitter:description"
+          content="Send your files privately and fast. No file size limit. No registration. Peer to peer. End to end encrypted."
+        />
+        <!-- <meta name="twitter:domain" content="https://toffeeshare.com" /> -->
+        <div class="page-sender">
+          <input
+            class="fileInput"
+            type="file"
+            name="files"
+            multiple=""
+            style="display: none"
+          />
+          <div class="content-top">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+              <input type="file" name="file" />
+              <button type="submit">Upload</button>
+            </form>
+            <!-- <div class="left">
+              <div class="select-files-mobile">
+                <a class="button on-dark">
+                  <img src="/static/media/plus.c4121374.svg" alt="Input File" />
+                </a>
+                <div class="spacer"></div>
+              </div> -->
+              <div></div>
+              <div class="modal-background select-files-desktop"></div>
+              <div class="container-modal select-files-desktop">
+                <div class="transfer-select-files">
+                  <div class="spacer"></div>
+                  <div class="container-file-drop">
+                    <span class="plus">+</span>
+                    <span class="drop-them-here"
+                      >Click to browse or drag files here to start sharing</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="right-centered">
+                <h1>Share files directly from your device to anywhere</h1>
+                <p class="description">
+                  Send files of any size directly from your device without ever
+                  storing anything online.
+                </p>
+                <div class="features">
+                  <div class="features-left">
+                    <div class="feature">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="32"
+                        viewBox="0 0 512 512"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-miterlimit="10"
+                          d="M256 256s-48-96-126-96c-54.12 0-98 43-98 96s43.88 96 98 96c37.51 0 71-22.41 94-48m32-48s48 96 126 96c54.12 0 98-43 98-96s-43.88-96-98-96c-37.51 0-71 22.41-94 48"
+                        ></path>
+                      </svg>
+                      <span>Peer to Peer</span>
+                    </div>
+                  </div>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M432 208H288l32-192L80 304h144l-32 192z"></path>
+                  </svg>
+                  <span>Blazingly fast</span>
+                </div>
+                <div class="feature">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  ></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-bottom">
+            <div class="container-informative">
+              <h2>What is P2P Share</h2>
+              <p class="text-explained">
+                We are a free and independent peer-to-peer (P2P) file sharing
+                service from India that prioritizes your privacy and keeps your
+                data safe. We store nothing online: simply close your browser to
+                stop sending. <br />
+                <br />Our mission is to make sure people keep their data safely
+                into their own hands, as it should be.
+              </p>
+              <div class="divider-orange"></div>
+              <div class="item-info">
+                <div class="container-circle-icon">
+                  <div class="img-info">☁️</div>
+                </div>
+                <div class="block-info">
+                  <h3>Files are shared straight from your device</h3>
+                  <p>
+                    When you close the browser tab your files are no longer
+                    accessible, minimising the risk of anyone getting unwanted
+                    access.
+                  </p>
+                </div>
+              </div>
+              <div class="item-info">
+                <div class="container-circle-icon">
+                  <div class="img-info">🌳</div>
+                </div>
+                <div class="block-info">
+                  <h3>Low environmental impact</h3>
+                  <p>
+                    Because we don't store data we don't need bulky servers, and
+                    that saves a lot of energy. By using P2P Share you'll have a
+                    much smaller carbon footprint than when using a cloud
+                    storage provider.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-notifications"></div>
+    </div>
+    <script src="/static/js/main.4d1c3a8b.js"></script>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const uploadButton = document.querySelector(".on-dark");
+        const fileInput = document.querySelector(".fileInput");
+
+        uploadButton.addEventListener("click", function () {
+          fileInput.click();
+        });
+      });
+    </script>
+  </body>
+</html>
